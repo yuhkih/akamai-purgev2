@@ -14,9 +14,9 @@ https://github.com/akamai/AkamaiOPEN-edgegrid-python
 It'like following information  
 (the following is dummy and doesn't work. you need to get your own credential from LUNA portal)  
 
-    *client_secret* = NRkv6et17nqkr8WelIEinr53534643fgH9XvLriss7PY4SJo=  
-    *host* = akab-jza67c2hm2nupbwq-taeredwob5vr67wf.luna.akamaiapis.net  
-    *access_token* = akab-ape6flkotadfaefhrl-532hlfdttj2sxxq6  
-    *client_token* = akab-vqzjnqjelbzwwqve-ysfgrrrfsys5mt  
+    client_secret = NRkv6et17nqkr8WelIEinr53534643fgH9XvLriss7PY4SJo=  
+    host = akab-jza67c2hm2nupbwq-taeredwob5vr67wf.luna.akamaiapis.net  
+    access_token = akab-ape6flkotadfaefhrl-532hlfdttj2sxxq6  
+    client_token = akab-vqzjnqjelbzwwqve-ysfgrrrfsys5mt  
 
 
