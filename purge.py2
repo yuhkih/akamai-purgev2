@@ -1,0 +1,26 @@
+import requests
+import json
+from akamai.edgegrid import EdgeGridAuth 
+from urlparse import urljoin
+baseurl = 'https://-----.purge.akamaiapis.net/'
+s = requests.Session()
+s.auth = EdgeGridAuth(
+client_token='------',
+client_secret='-------',
+access_token='---------'
+)
+
+
+headers = {'Content-Type':'application/json'}
+data = {
+"type" : "arl",
+"action" : "invalidate",
+"domain" : "production",
+"objects" : [
+"https://www.example.com/images/55.jpg",
+"https://www.example.com/index.html"
+]
+}
+result = s.post(urljoin(baseurl,'/ccu/v2/queues/default'),headers=headers,data=json.dumps(data)) 
+print result.status_code
+print json.dumps(result.json(),indent=2) 
